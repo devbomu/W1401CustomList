@@ -14,7 +14,8 @@
         android:src="@android:drawable/ic_menu_gallery"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/item_song_album" />
 
     <TextView
         android:id="@+id/text1"
