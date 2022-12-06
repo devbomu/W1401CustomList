@@ -2,7 +2,6 @@ package kr.ac.kumoh.s20180100.w1401customlist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -46,13 +45,13 @@ class MainActivity : AppCompatActivity() {
 
     inner class SongAdapter : RecyclerView.Adapter<SongAdapter.ViewHolder>(){
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-            val txTitle = itemView.findViewById<TextView>(android.R.id.text1)
-            val txType = itemView.findViewById<TextView>(android.R.id.text2)
+            val txTitle = itemView.findViewById<TextView>(R.id.text1)
+            val txType = itemView.findViewById<TextView>(R.id.text2)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view = layoutInflater.inflate(
-                android.R.layout.simple_list_item_2,
+                R.layout.item_song,
                 parent,
                 false
             )
